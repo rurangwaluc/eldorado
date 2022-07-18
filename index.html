@@ -17,6 +17,8 @@
     />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- swiper -->
+  <link  rel="stylesheet"  href="/js/swiper.min.css"/>
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Eldorado Travel Agency</title>
@@ -283,6 +285,116 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonial Container -->
+
+    <section class="reviews">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        
+        <div class="reviews_header">
+          <h4>REVIEW & TESTIMONIALS</h4>
+          <h1 class="h1">Top Reviews for <span class="blue_text">Eldorado </span> </h1>
+        </div>
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Amy Johnson <br><span>Traveler</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         
+          
+          
+       </div>
+      </div>
+  
+    </div>
+    </section>
+
      <!-- Contact Container -->
   <div class="contact_container">
     <span class="big-circle"></span>
@@ -408,6 +520,48 @@
     
 <a href="https://wa.me/250788571539" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          },
+          
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        on: {
+          init() {
+            this.el.addEventListener('mouseenter', () => {
+              this.autoplay.stop();
+            });
+  
+            this.el.addEventListener('mouseleave', () => {
+              this.autoplay.start();
+            });
+          }
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true
+      });
+  </script>
   </body>
 </html>
