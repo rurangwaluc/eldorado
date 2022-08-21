@@ -1,0 +1,1164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1D93D1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3192;
+  /* border-radius: 5rem; */
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: #808080;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #2d3192;
+  padding: 1em 2em;
+  transition: all 0.1s;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+button:hover {
+  background: #ff7c5b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  transform: scale(0.95);
+}
+
+@font-face {
+  font-family: "Sketsa Ramadhan";
+  src: url("/Sketsa Ramadhan.otf") format("truetype");
+}
+:root {
+  --primary: #1f85c6;
+  --heading-font: "Poppins", serif;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+}
+#home video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  background-attachment: fixed;
+}
+#home .container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+#home header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+#home header #logo {
+  width: 6rem;
+  height: 6rem;
+}
+#home header #logo img {
+  width: 100%;
+  height: 100%;
+}
+#home header nav ul {
+  display: flex;
+}
+#home header nav ul li {
+  margin: 20px;
+  list-style: none;
+}
+#home header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding-bottom: 0.2em;
+  font-size: 1.7em;
+}
+#home header nav ul li a:hover {
+  color: #ff7c5b;
+}
+#home header nav ul li a:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff7c5b;
+  z-index: 1;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+#home header nav ul li a:hover:after {
+  transform: scale(1);
+  transform-origin: left;
+}
+#home header nav ul li .active {
+  color: #fff;
+}
+#home header nav ul #quit {
+  display: none;
+}
+#home header #bars {
+  display: none;
+}
+#home .content {
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+#home .content .left {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#home .content .left h1 {
+  padding-top: 2rem;
+  font-family: var(--heading-font);
+  font-size: 55px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+}
+#home .content .left h1 span {
+  color: var(--primary);
+  font-size: 75px;
+  font-family: "Sketsa Ramadhan";
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+}
+#home .content .left p {
+  padding: 10px 0 2em 0;
+  color: #fff;
+  font-size: 18px !important;
+}
+#home .content .left .btns {
+  transition: all 0.3s;
+}
+#home .content .left .btns a {
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  color: #fff;
+  font-weight: bolder;
+  font-size: 17px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+#home .content .left .btns a:hover {
+  background: #ff7c5b;
+  transform: scale(0.8);
+}
+#home .content .left .btns #login {
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+}
+#home .content .left .btns #login:hover {
+  transform: scale(0.8);
+  background: #ff7c5b;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  transform: scale(0.8);
+}
+#home .content .left .icons {
+  padding: 50px 0;
+}
+#home .content .left .icons i {
+  padding-right: 40px;
+  cursor: pointer;
+}
+#home .content .left .icons i:hover {
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 940px) {
+  #home {
+    height: 600px;
+    overflow: hidden;
+  }
+  #home video {
+    height: 600px;
+    overflow: hidden;
+  }
+  #home header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    background-color: rgb(36, 36, 36);
+    height: 100vh;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  #home header nav ul {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  #home header nav ul li {
+    padding-left: 10px;
+  }
+  #home header nav ul li a {
+    font-size: 17px;
+  }
+  #home header nav ul li a:hover {
+    color: #ff7c5b;
+  }
+  #home header nav ul #quit {
+    text-align: right;
+    display: block;
+  }
+  #home header nav ul #quit i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 30px;
+    padding: 10px;
+    transition: all 0.5s ease;
+  }
+  #home header nav ul #quit i:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: all 0.5s ease;
+  }
+  #home header #bars {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+  #home header #bars .bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+  }
+  #home header #bars:hover .shortbar {
+    width: 40px;
+    transition: all 0.3s ease;
+  }
+  #home .content {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #home {
+    height: 600px;
+    overflow: hidden;
+  }
+  #home video {
+    height: 600px;
+    overflow: hidden;
+  }
+  #home .content {
+    padding: 20px 30px;
+  }
+  #home .content .left {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #home .content .left h1 span {
+    font-size: 45px;
+  }
+  #home .content .left p {
+    font-size: 15px !important;
+    text-align: justify;
+  }
+  #home .content .right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #home {
+    height: 500px;
+    overflow: hidden;
+  }
+  #home video {
+    height: 500px;
+    overflow: hidden;
+  }
+  #home header {
+    padding: 25px;
+  }
+  #home .content {
+    padding: 20px 30px;
+  }
+  #home .content .left h1 {
+    font-size: 25px;
+  }
+}
+.specials {
+  padding: 3rem 5rem;
+  background: #f5f6f6;
+}
+.specials h3 {
+  color: #808080;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7em;
+}
+.specials h1 {
+  color: #061a3a;
+  margin-bottom: 1em;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 800;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  background: #f5f6f6;
+}
+.cards-container .card {
+  border-radius: 1em;
+  height: 40em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cards-container .card .image {
+  width: 100%;
+  height: 28.4em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards-container .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em 1em 0em 0em;
+}
+.cards-container .card .card-info {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1em;
+}
+.cards-container .card .card-info .icon-box {
+  position: absolute;
+  top: -30%;
+  left: 37%;
+  width: 7em;
+  height: 7em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.cards-container .card .card-info .icon-box i {
+  color: #ff7c5b;
+  font-size: 4em;
+  background-color: #fff;
+  padding: 0.8em 0rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.cards-container .card .card-info h3 {
+  font-size: 2.5em;
+  line-height: 1em;
+  font-weight: 800;
+  padding: 1.5em 0.5em;
+  color: #061a3a;
+  text-transform: capitalize;
+}
+
+.other-info {
+  text-align: center;
+  padding: 3rem 5rem;
+  width: 100%;
+  height: 50em;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/Images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.other-info h2 {
+  font-size: 6em;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  text-align: center;
+  padding-top: 2em;
+}
+.other-info p {
+  font-size: 1.6em;
+  color: #fff;
+  font-weight: 400;
+  width: 50em;
+  text-align: center;
+  margin: 0 auto;
+}
+.other-info button {
+  margin-top: 1em;
+}
+
+.popular-destinations {
+  padding: 3rem 5rem;
+  background-color: #fff;
+}
+.popular-destinations .destinations-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+}
+.popular-destinations .destinations-container .destination {
+  position: relative;
+  height: 34em;
+  border: 1em solid #f5f6f6;
+  border-radius: 1em;
+}
+.popular-destinations .destinations-container .destination .content h3 {
+  font-size: 1.6em;
+}
+.popular-destinations .destinations-container .destination .content h1 {
+  color: #061a3a;
+  margin-bottom: 1em;
+  font-size: 4em;
+  font-family: "Poppins", serif;
+  font-weight: 800;
+}
+.popular-destinations .destinations-container .destination .content span {
+  font-size: 1.9em;
+}
+.popular-destinations .destinations-container .destination .lower-content {
+  text-align: center;
+  margin-top: 10em;
+  background: #f5f6f6;
+  border-radius: 50%;
+  padding: 5em 2em;
+}
+.popular-destinations .destinations-container .destination .lower-content h2 {
+  font-size: 2.5em;
+  color: #061a3a;
+  text-align: center;
+  font-weight: 700;
+}
+.popular-destinations .destinations-container .destination .lower-content button {
+  background-color: #ff7c5b;
+}
+.popular-destinations .destinations-container .destination .lower-content button:hover {
+  background-color: #061a3a;
+}
+.popular-destinations .destinations-container .destination:nth-child(1) {
+  border: none;
+}
+.popular-destinations .destinations-container .destination .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.popular-destinations .destinations-container .destination .image:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+}
+.popular-destinations .destinations-container .destination .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular-destinations .destinations-container .destination .image img:hover {
+  transform: scale(1.1);
+}
+.popular-destinations .destinations-container .destination p {
+  font-size: 3em;
+  font-weight: 600;
+  color: #ff7c5b;
+  position: absolute;
+  font-family: "Poppins", serif;
+  left: 5%;
+  bottom: 10%;
+}
+
+.services {
+  padding: 3rem 5rem;
+  background-color: #f5f6f6;
+}
+.services .service-information h2 {
+  font-family: "Poppins", serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #061a3a;
+  font-weight: 700;
+}
+.services .service-information p {
+  margin-bottom: 1.5em;
+  width: 40em;
+  font-size: 1.5em;
+}
+.services .services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .services-container .service {
+  text-align: center;
+  transition: all 0.3s;
+  padding: 1.5em 3em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.services .services-container .service .icon-container {
+  text-align: center;
+}
+.services .services-container .service .icon-container i {
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  background: #ff7c5b;
+  padding: 1.5em 0em;
+  font-size: 2.5em;
+  border-radius: 50%;
+  color: #fff;
+}
+.services .services-container .service h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0em;
+  color: #061a3a;
+  font-family: "Poppins", serif;
+}
+.services .services-container .service p {
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.blue_text {
+  color: #2A8DCC;
+  font-family: "Sketsa Ramadhan";
+  text-transform: capitalize;
+  font-size: 60px;
+}
+
+.blue_text_footer {
+  color: #2A8DCC;
+  font-family: "Sketsa Ramadhan";
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.reviews {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #FF7C5B;
+  padding: 40px 20px;
+}
+
+.reviews:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.reviews_header {
+  padding: 30px;
+  text-align: center;
+}
+
+.reviews_header h4 {
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.reviews_header h1 {
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(4px);
+  background-color: #edeef0;
+  border-radius: 10px;
+  font-size: 1.6em;
+  text-align: justify;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.testimonial_box {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 30px;
+  color: #000000;
+}
+
+.testimonial_box .testimonial_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.testimonial_box .testimonial_icons i {
+  font-size: 16px;
+  color: #f0ce54;
+}
+
+.testimonial_box .quote {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.2;
+}
+
+.testimonial_box .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial_box .details .imgBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  display: none;
+}
+
+.testimonial_box .details .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+.testimonial_box .details h3 {
+  color: #061a3a;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.testimonial_box .details h3 span {
+  font-size: 12px;
+  color: #666;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.contact_container {
+  padding: 50px 20px;
+}
+.contact_container .contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.contact_container .card {
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.contact_container .card-icon {
+  font-size: 28px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.contact_container .card:hover .card-icon {
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+.contact_container .card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  font-size: 14px;
+  text-align: center;
+}
+.contact_container .card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+@media screen and (max-width: 800px) {
+  .contact_container .contact-info {
+    flex-direction: column;
+  }
+  .contact_container .card {
+    width: 100%;
+    max-width: 370px;
+    margin: 10px 0;
+  }
+  .contact_container .card p {
+    font-size: 14px;
+  }
+}
+
+footer {
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer .footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+footer .footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+footer .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+footer .socials li {
+  margin: 0 10px;
+}
+footer .socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+footer .socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+footer .socials a:hover i {
+  color: aqua;
+}
+footer .footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+footer .footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer .footer-bottom p a {
+  color: #44bae8;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer .footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+footer .footer-menu {
+  float: right;
+}
+footer .footer-menu ul {
+  display: flex;
+}
+footer .footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+footer .footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+footer .footer-menu ul li a:hover {
+  color: #27bcda;
+}
+@media (max-width: 500px) {
+  footer .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+  color: #FFF;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .popular-destinations .destinations-container .destination {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .popular-destinations .destinations-container .destination .content {
+    padding: 0px;
+    width: 100%;
+    height: 10em !important;
+  }
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .specials {
+    padding: 3rem 2rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 40%;
+  }
+  .popular-destinations {
+    padding: 3rem 2rem;
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 3rem 2rem;
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  footer {
+    padding: 3rem 2rem;
+  }
+  footer .footer-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 3em;
+  }
+}
+@media screen and (max-width: 880px) {
+  .specials {
+    padding: 1.5rem 1rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 40%;
+  }
+  .other-info p {
+    width: 35em;
+  }
+  .popular-destinations {
+    padding: 1.5rem 1rem;
+  }
+  .popular-destinations .destinations-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 1.5rem 1rem;
+  }
+  .services .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  .footer {
+    padding: 1.5rem 1rem !important;
+  }
+}
+@media screen and (max-width: 660px) {
+  .specials {
+    padding: 1rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  .specials .cards-container .card {
+    margin-bottom: 1em;
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 40%;
+  }
+  .other-info {
+    padding: 1em;
+  }
+  .other-info h2 {
+    font-size: 4.5em;
+  }
+  .other-info p {
+    width: 20em;
+    font-size: 1.5em;
+  }
+  .popular-destinations {
+    padding: 1.5rem 1rem;
+  }
+  .popular-destinations .destinations-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 1.5rem 1rem;
+  }
+  .services .service-information p {
+    width: 80%;
+  }
+  .services .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  footer {
+    padding: 1.5rem 1rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .specials {
+    padding: 1rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .specials .cards-container .card {
+    margin-bottom: 1em;
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 45%;
+  }
+  .other-info h2 {
+    font-size: 4.5em;
+  }
+  .other-info p {
+    width: 80%;
+    font-size: 1.5em;
+  }
+  .popular-destinations {
+    padding: 1.5rem 1rem;
+  }
+  .popular-destinations .destinations-container {
+    grid-template-columns: 1fr;
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 1.5rem 1rem;
+  }
+  .services .services-container {
+    grid-template-columns: 1fr;
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  footer {
+    padding: 1em;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .specials {
+    padding: 1rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .specials .cards-container .card {
+    margin-bottom: 1em;
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 40%;
+  }
+  .other-info h2 {
+    font-size: 3.5em;
+  }
+  .other-info p {
+    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .popular-destinations {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+  .popular-destinations .destinations-container {
+    grid-template-columns: 1fr;
+  }
+  .popular-destinations .destinations-container .destination {
+    width: 80% !important;
+  }
+  .popular-destinations .destinations-container .destination .content h1 {
+    font-size: 3em;
+  }
+  .popular-destinations .destinations-container .destination .content span {
+    width: 80% !important;
+    font-size: 1.5em;
+  }
+  .popular-destinations .lower-content h2 {
+    font-size: 1.4em;
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 1em;
+  }
+  .services .service-information H2 {
+    font-size: 2.5em;
+  }
+  .services .services-container {
+    grid-template-columns: 1fr;
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  footer {
+    padding: 1em;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr !important;
+  }
+}/*# sourceMappingURL=style.css.map */

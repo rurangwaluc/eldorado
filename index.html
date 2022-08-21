@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+    <!-- swiper -->
+  <link  rel="stylesheet"  href="/js/swiper.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Eldorado Travel Agency</title>
+  </head>
+  <body>
+  
+    <section id="home">
+      <video autoplay muted loop="true" src="video/videos-1.mp4"></video>
+      <div class="container">
+        <header>
+          <div id="logo">
+            <img
+              src="Images/Eldorado_Travel_Agency.png"
+              alt="Eldorado Travel Agency Logo"
+            />
+          </div>
+          <nav id="navbar">
+            <ul>
+              <div id="quit">
+                <i
+                  class="fa fa-times"
+                  aria-hidden="true"
+                  onclick="toggle()"
+                ></i>
+              </div>
+
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#destination">Destinations</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="bars" onclick="toggle()">
+            <div class="bar shortbar"></div>
+            <div class="bar"></div>
+            <div class="bar shortbar"></div>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+          <div class="left">
+            <h1>We are a World class Travel Agency</h1>
+            <p>
+              <span>Traveling to places around the world is a good way for getting to know yourself better. We are committed to helping you travel to different destinations according to your specific criteria.
+            </p>
+            <div class="btns">
+              <a href="#" id="login">Book With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specials" id="about">
+      <h3>El dorado Specials</h3>
+      <h1>Why Travel With <span class="blue_text">Eldorado </span></h1>
+
+      <div class="cards-container">
+        <div class="card">
+          <div class="image">
+            <img
+              src="Images/El dorado Travel Location1.jpg"
+              alt="El dorado travel Location"
+            />
+          </div>
+          <div class="card-info">
+            <div class="icon-box">
+              <i class="fa-solid fa-person-walking-luggage fa-2xl"></i>
+            </div>
+            <h3>2000+ Our Worldwide Guide</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img
+              src="Images/El dorado Travel Location2.jpg"
+              alt="El dorado travel Location"
+            />
+          </div>
+          <div class="card-info">
+            <div class="icon-box">
+              <i class="fa-solid fa-people-carry-box fa-2xl"></i>
+            </div>
+            <h3>100% Trusted Travel Agency</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img
+              src="Images/El dorado Travel Location3.jpg"
+              alt="El dorado travel Location"
+            />
+          </div>
+          <div class="card-info">
+            <div class="icon-box">
+              <i class="fa-solid fa-people-group fa-2xl"></i>
+            </div>
+            <h3>12+ Years of Travel Experience</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img
+              src="Images/El dorado Travel Location4.jpg"
+              alt="El dorado travel Location"
+            />
+          </div>
+          <div class="card-info">
+            <div class="icon-box">
+              <i class="fa-solid fa-person-skating fa-2xl"></i>
+            </div>
+            <h3>98% of Our Travelers are Happy</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="other-info" id="other">
+      <h2>Explore Your Travel</h2>
+      <p>
+        Looking for that sweet spot between independent backpacking and
+        organized group tours? Congratulations, you have found it! El dorado
+        Travel agency combine the support and security of group travel,
+        unbeatable variety, and the flexibility to go off-script when fate says,
+        “Hey, let’s do this.”
+      </p>
+
+      <button>More Info</button>
+    </section>
+    <section class="popular-destinations" id="destinations">
+      <div class="destinations-container">
+        <div class="destination">
+          <div class="content">
+            <h3>CHOOSE YOUR PLACE</h3>
+            <h1>Popular Destinations</h1>
+            <span
+              >Welcome to the best travel agency in Rwanda where you can find
+              tons of tours to any place on Earth.</span
+            >
+          </div>
+        </div>
+        <div class="destination">
+          <div class="image">
+            <img src="/Images/la.jpg" alt="Los Angeles" />
+          </div>
+          <p>Los Angeles</p>
+        </div>
+        <div class="destination">
+          <div class="image">
+            <img src="/Images/mumbai.jpg" alt="Mumbai" />
+          </div>
+          <p>Mumbai</p>
+        </div>
+        <div class="destination">
+          <div class="image">
+            <img src="/Images/newyork.jpg" alt="New York" />
+          </div>
+          <p>New York</p>
+        </div>
+        <div class="destination">
+          <div class="image">
+            <img src="/Images/dubai.jpg" alt="Dubai" />
+          </div>
+          <p>Dubai</p>
+        </div>
+        <div class="destination">
+          <div class="image">
+            <img src="/Images/doha.jpg" alt="Doha" />
+          </div>
+          <p>Doha</p>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="service-information">
+        <h2>We provide different services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          impedit ducimus esse. Labore saepe optio autem incidunt eveniet id
+          iste, debitis eius quibusdam earum soluta quia ratione. Recusandae,
+          non excepturi.
+        </p>
+      </div>
+
+      <div class="services-container">
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-plane-departure fa-2xl"></i>
+          </div>
+          <h2>Airline Ticketing</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-hotel fa-2xl"></i>
+          </div>
+          <h2>Hotel Booking</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-book-atlas fa-2xl"></i>
+          </div>
+          <h2>Travel and Tours</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-car fa-2xl"></i>
+          </div>
+          <h2>Transport Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-passport fa-2xl"></i>
+          </div>
+          <h2>All Visa Assistance</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon-container">
+            <i class="fa-solid fa-ticket fa-2xl"></i>
+          </div>
+          <h2>Flight Booking</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione
+            nulla, totam quis voluptate praesentium, sequi saepe pariatur sint
+            iure quos rem vitae corrupti labore, enim nesciunt illo accusamus
+            necessitatibus maiores! Aliquid deserunt velit minus temporibus
+            iste, expedita possimus exercitationem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Container -->
+
+    <section class="reviews">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        
+        <div class="reviews_header">
+          <h4>REVIEW & TESTIMONIALS</h4>
+          <h1 class="h1">Top Reviews for <span class="blue_text">Eldorado </span> </h1>
+        </div>
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Amy Johnson <br><span>Traveler</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>12 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>13 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="testimonial_box">
+              <img src="Images/right-quote.png" class="quote" alt="Quote" width="40">
+              <div class="testimonial_icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="content">
+                <p>14 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias aliquid quas nam eaque? Sint obcaecati facilis inventore sunt! Expedita autem accusamus, veritatis ut reprehenderit quaerat omnis ratione unde sapiente!</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="Images/testimonial-2.png" alt="">
+                  </div>
+                  <h3>Someone Famous <br><span>Creative Design</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         
+          
+          
+       </div>
+      </div>
+  
+    </div>
+    </section>
+
+     <!-- Contact Container -->
+  <section id="Contact" class="contact_container">
+
+    <div class="contact-info">
+      <div class="card">
+        <i class="card-icon fas fa-envelope"></i>
+        <p>eldoradotravelagency4@gmail.com</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-phone"></i>
+        <p>+250788571539 | +250785541722</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-map-marker-alt"></i>
+        <p>CHIC Building 1st floor, Room B-10 </p>
+      </div>
+    </div>
+
+  </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <h3><span class="blue_text_footer">Eldorado </span> Travel Agency</h3>
+        <p>Welcome to the best travel agency in Rwanda where you can find tons of tours to any place on Earth.</p>
+        
+    </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2022 Designed By <a href="https://www.rurangwa-luc.ml/" target="_blank">Luc</a></p>
+      </div>
+    </footer>
+
+    
+<a href="https://wa.me/250788571539" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          },
+          
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        on: {
+          init() {
+            this.el.addEventListener('mouseenter', () => {
+              this.autoplay.stop();
+            });
+  
+            this.el.addEventListener('mouseleave', () => {
+              this.autoplay.start();
+            });
+          }
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true
+      });
+  </script>
+  </body>
+</html>
