@@ -804,12 +804,36 @@ $secondary-color: #ff7c5b;
 }
 
 
-
+@media screen and (max-width:800px) {
+  .reviews_header {
+  
+    padding: 30px 0;
+  h1{
+    font-size: 30px;
+  }
+}
+  }
+@media screen and (max-width:390px) {
+  .testimonial_box{
+ 
+    padding: 10px;
+    
+  }
+  }
 
 
 // Contact section
 .contact_container {
 padding: 50px 20px;
+.contact_header{
+    padding:  20px;
+    margin: 20px auto;
+    color: #2f3542;
+    text-align: center;
+    h1{
+      font-size: 40px;
+    }
+}
   .contact-info{
     display: flex;
     width: 100%;
@@ -825,14 +849,15 @@ padding: 50px 20px;
     background: #2f3542;
     padding: 0 20px;
     margin: 0 10px;
-    width: calc(33% - 20px);
+    width: calc(35% - 20px);
     height: 200px;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     cursor: pointer;
+    border-radius: 10px;
   }
   
   .card-icon{
@@ -875,10 +900,30 @@ padding: 50px 20px;
     }
     .card{
       width: 100%;
-      max-width: 370px;
       margin: 10px 0;
       p{
         font-size: 14px;
+      }
+      
+    }
+  }
+  
+  @media screen and (max-width:390px) {
+    
+    .contact_container{
+
+      padding: 10px;
+    }
+    .contact-info{
+      flex-direction: column;
+      padding: 0px;
+    }
+    .card{
+      width: 100%;
+      margin: 10px 0;
+      padding: 0px;
+      p{
+        font-size: 12px;
       }
       
     }
@@ -896,7 +941,7 @@ footer {
   right: 0;
   background: #111;
   height: auto;
-  width: 100vw;
+  width: 100%;
 
   padding-top: 40px;
   color: #fff;
@@ -913,6 +958,11 @@ footer {
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
+    #span{
+      font-size: 1.4rem;
+      margin: 0;
+
+    }
 }
 .footer-content p{
     max-width: 500px;
@@ -1260,8 +1310,10 @@ display: block;
     padding: 1.5rem 1rem;
     .destinations-container {
       grid-template-columns: (1fr);
+      .destination:nth-child(1) {
+        height: 180px;
+      }
     }
-
     .lower-content {
       button {
         font-size: 1.2em;
@@ -1288,6 +1340,8 @@ display: block;
   }
 }
 @media screen and(max-width:380px) {
+
+  
   .specials {
     padding: 1rem;
 
@@ -1327,7 +1381,96 @@ display: block;
       grid-template-columns: (1fr);
 
       .destination {
-        width: 80% !important;
+        width: 100% !important;
+
+        .content {
+          h1 {
+            font-size: 3em;
+          }
+          span {
+            width: 80% !important;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+
+    .lower-content {
+      h2 {
+        font-size: 1.4em;
+      }
+      button {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .services {
+    padding: 1em;
+    .service-information {
+      H2 {
+        font-size: 2.5em;
+      }
+    }
+
+    .services-container {
+      grid-template-columns: (1fr);
+      .service {
+        padding: 1.5em;
+      }
+    }
+  }
+  footer {
+    padding: 1em;
+    // grid-gap: 1em;
+    .footer-container {
+      grid-template-columns: (1fr) !important;
+    }
+  }
+}
+@media screen and(max-width:390px) {
+
+  
+  .specials {
+    padding: 1rem;
+
+    .cards-container {
+      // padding: 3rem;
+      display: grid;
+      grid-template-columns: (1fr);
+
+      .card {
+        margin-bottom: 1em;
+        .card-info {
+          .icon-box {
+            left: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  .other-info {
+    h2 {
+      font-size: 3.5em;
+    }
+    p {
+      width: 80%;
+      font-size: 1.5em;
+      // margin: 0em 0em !important;
+      // padding: 0em 1em;
+      text-align: center;
+    }
+  }
+
+  .popular-destinations {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    .destinations-container {
+      grid-template-columns: (1fr);
+
+      .destination {
+        width: 100% !important;
 
         .content {
           h1 {

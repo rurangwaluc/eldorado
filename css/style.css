@@ -723,8 +723,30 @@ button:hover {
   background-image: none !important;
 }
 
+@media screen and (max-width: 800px) {
+  .reviews_header {
+    padding: 30px 0;
+  }
+  .reviews_header h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .testimonial_box {
+    padding: 10px;
+  }
+}
 .contact_container {
   padding: 50px 20px;
+}
+.contact_container .contact_header {
+  padding: 20px;
+  margin: 20px auto;
+  color: #2f3542;
+  text-align: center;
+}
+.contact_container .contact_header h1 {
+  font-size: 40px;
 }
 .contact_container .contact-info {
   display: flex;
@@ -739,14 +761,15 @@ button:hover {
   background: #2f3542;
   padding: 0 20px;
   margin: 0 10px;
-  width: calc(33% - 20px);
+  width: calc(35% - 20px);
   height: 200px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
   cursor: pointer;
+  border-radius: 10px;
 }
 .contact_container .card-icon {
   font-size: 28px;
@@ -783,11 +806,27 @@ button:hover {
   }
   .contact_container .card {
     width: 100%;
-    max-width: 370px;
     margin: 10px 0;
   }
   .contact_container .card p {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .contact_container .contact_container {
+    padding: 10px;
+  }
+  .contact_container .contact-info {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .contact_container .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0px;
+  }
+  .contact_container .card p {
+    font-size: 12px;
   }
 }
 
@@ -796,7 +835,7 @@ footer {
   right: 0;
   background: #111;
   height: auto;
-  width: 100vw;
+  width: 100%;
   padding-top: 40px;
   color: #fff;
 }
@@ -812,6 +851,10 @@ footer .footer-content h3 {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+}
+footer .footer-content h3 #span {
+  font-size: 1.4rem;
+  margin: 0;
 }
 footer .footer-content p {
   max-width: 500px;
@@ -1079,6 +1122,9 @@ footer .footer-menu ul li a:hover {
   .popular-destinations .destinations-container {
     grid-template-columns: 1fr;
   }
+  .popular-destinations .destinations-container .destination:nth-child(1) {
+    height: 180px;
+  }
   .popular-destinations .lower-content button {
     font-size: 1.2em;
   }
@@ -1128,7 +1174,71 @@ footer .footer-menu ul li a:hover {
     grid-template-columns: 1fr;
   }
   .popular-destinations .destinations-container .destination {
+    width: 100% !important;
+  }
+  .popular-destinations .destinations-container .destination .content h1 {
+    font-size: 3em;
+  }
+  .popular-destinations .destinations-container .destination .content span {
     width: 80% !important;
+    font-size: 1.5em;
+  }
+  .popular-destinations .lower-content h2 {
+    font-size: 1.4em;
+  }
+  .popular-destinations .lower-content button {
+    font-size: 1.2em;
+  }
+  .services {
+    padding: 1em;
+  }
+  .services .service-information H2 {
+    font-size: 2.5em;
+  }
+  .services .services-container {
+    grid-template-columns: 1fr;
+  }
+  .services .services-container .service {
+    padding: 1.5em;
+  }
+  footer {
+    padding: 1em;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .specials {
+    padding: 1rem;
+  }
+  .specials .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .specials .cards-container .card {
+    margin-bottom: 1em;
+  }
+  .specials .cards-container .card .card-info .icon-box {
+    left: 40%;
+  }
+  .other-info h2 {
+    font-size: 3.5em;
+  }
+  .other-info p {
+    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .popular-destinations {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+  .popular-destinations .destinations-container {
+    grid-template-columns: 1fr;
+  }
+  .popular-destinations .destinations-container .destination {
+    width: 100% !important;
   }
   .popular-destinations .destinations-container .destination .content h1 {
     font-size: 3em;
