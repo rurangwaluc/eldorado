@@ -36,7 +36,6 @@ button {
   transition: all 0.1s;
   border-radius: 0.3em;
   text-transform: uppercase;
-  font-family: "Poppins", serif;
   font-weight: 600;
   letter-spacing: 0.2em;
 }
@@ -175,7 +174,6 @@ button:hover {
 }
 #home .content .left .btns a {
   text-decoration: none;
-  font-family: "Poppins", serif;
   text-transform: uppercase;
   padding: 10px 20px;
   border: 2px solid var(--primary);
@@ -340,8 +338,11 @@ button:hover {
 }
 .specials h3 {
   color: #808080;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
+  font-size: 1.7em;
+}
+.specials h3 .blue_text {
   font-size: 1.7em;
 }
 .specials h1 {
@@ -349,7 +350,6 @@ button:hover {
   margin-bottom: 1em;
   font-size: 4em;
   text-align: center;
-  font-family: "Poppins", serif;
   font-weight: 800;
 }
 
@@ -426,7 +426,6 @@ button:hover {
   font-size: 6em;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", serif;
   text-align: center;
   padding-top: 2em;
 }
@@ -464,7 +463,6 @@ button:hover {
   color: #061a3a;
   margin-bottom: 1em;
   font-size: 4em;
-  font-family: "Poppins", serif;
   font-weight: 800;
 }
 .popular-destinations .destinations-container .destination .content span {
@@ -518,7 +516,6 @@ button:hover {
   font-weight: 600;
   color: #ff7c5b;
   position: absolute;
-  font-family: "Poppins", serif;
   left: 5%;
   bottom: 10%;
 }
@@ -528,16 +525,19 @@ button:hover {
   background-color: #f5f6f6;
 }
 .services .service-information h2 {
-  font-family: "Poppins", serif;
   font-size: 4em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #061a3a;
   font-weight: 700;
+  text-align: center;
 }
 .services .service-information p {
   margin-bottom: 1.5em;
   width: 40em;
   font-size: 1.5em;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: justify !important;
 }
 .services .services-container {
   display: grid;
@@ -569,7 +569,6 @@ button:hover {
   font-size: 2em;
   margin: 1em 0em;
   color: #061a3a;
-  font-family: "Poppins", serif;
 }
 .services .services-container .service p {
   font-size: 1.4em;
@@ -580,7 +579,6 @@ button:hover {
   color: #2A8DCC;
   font-family: "Sketsa Ramadhan";
   text-transform: capitalize;
-  font-size: 60px;
 }
 
 .blue_text_footer {
@@ -653,7 +651,7 @@ button:hover {
 .testimonial_box {
   position: relative;
   width: 100%;
-  padding: 40px;
+  padding: 40px 10px;
   padding-top: 30px;
   color: #000000;
 }
@@ -724,16 +722,8 @@ button:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .reviews_header {
-    padding: 30px 0;
-  }
   .reviews_header h1 {
     font-size: 30px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .testimonial_box {
-    padding: 10px;
   }
 }
 .contact_container {
@@ -1067,8 +1057,10 @@ footer .footer-menu ul li a:hover {
     font-size: 4.5em;
   }
   .other-info p {
-    width: 20em;
+    width: 24em;
     font-size: 1.5em;
+    padding: 0;
+    margin: 0 auto;
   }
   .popular-destinations {
     padding: 1.5rem 1rem;
@@ -1113,8 +1105,10 @@ footer .footer-menu ul li a:hover {
     font-size: 4.5em;
   }
   .other-info p {
-    width: 80%;
+    width: 100%;
     font-size: 1.5em;
+    padding: 0;
+    margin: 0 auto;
   }
   .popular-destinations {
     padding: 1.5rem 1rem;
@@ -1162,8 +1156,10 @@ footer .footer-menu ul li a:hover {
     font-size: 3.5em;
   }
   .other-info p {
-    width: 80%;
+    width: 100%;
     font-size: 1.5em;
+    padding: 0;
+    margin: 0 auto;
     text-align: center;
   }
   .popular-destinations {
@@ -1191,6 +1187,9 @@ footer .footer-menu ul li a:hover {
   }
   .services {
     padding: 1em;
+  }
+  .services .service-information {
+    text-align: center;
   }
   .services .service-information H2 {
     font-size: 2.5em;
