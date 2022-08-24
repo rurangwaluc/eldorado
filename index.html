@@ -29,54 +29,56 @@
   </head>
   <body>
   
-    <section id="home">
-      <video autoplay muted loop="true" src="video/videos-1.mp4"></video>
-      <div class="container">
-        <header>
-          <div id="logo">
-            <img
-              src="Images/Eldorado_Travel_Agency.png"
-              alt="Eldorado Travel Agency Logo"
-            />
-          </div>
-          <nav id="navbar">
-            <ul>
-              <div id="quit">
-                <i
-                  class="fa fa-times"
-                  aria-hidden="true"
-                  onclick="toggle()"
-                ></i>
-              </div>
+      
+<!-- header section starts  -->
 
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#destination">Destinations</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#Contact">Contact</a></li>
-            </ul>
-          </nav>
-          <div id="bars" onclick="toggle()">
-            <div class="bar shortbar"></div>
-            <div class="bar"></div>
-            <div class="bar shortbar"></div>
-          </div>
-        </header>
+<header class="header">
 
-        <!-- Content -->
-        <div class="content">
-          <div class="left">
-            <h1>We are a World class Travel Agency</h1>
-            <p>
-              <span>Traveling to places around the world is a good way for getting to know yourself better. We are committed to helping you travel to different destinations according to your specific criteria.
-            </p>
-            <div class="btns">
-              <a href="#" id="login">Book With Us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+  <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> 
+    <img
+    src="Images/Eldorado_Travel_Agency.png"
+    alt="Eldorado Travel Agency Logo"
+    widt="100"
+  /> 
+   </a>
+
+  <nav class="navbar">
+      <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+      <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+      <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
+      <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
+      <a data-aos="zoom-in-left" data-aos-delay="900" href="#testimonials">Testimonials</a>
+      <a data-aos="zoom-in-left" data-aos-delay="1150" href="#Contact">Contact</a>
+  </nav>
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+  <div class="video-container">
+    <video autoplay muted loop>
+    <source src="video/videos-1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="content">
+     <div class="text">
+      <span data-aos="fade-up" data-aos-delay="150">We are a World class Travel Agency</span>
+      <!-- <h3 data-aos="fade-up" data-aos-delay="300">to the unknown</h3> -->
+      <p data-aos="fade-up" data-aos-delay="450">Traveling to places around the world is a good way for getting to know yourself better. We are committed to helping you travel to different destinations according to your specific criteria.</p>
+      <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">book now</a>
+     </div>
+  </div>
+
+</section>
+
+<!-- home section ends -->
+
 
     <section class="specials" id="about">
       <h3><span class="blue_text">Eldorado </span> Specials</h3>
@@ -151,9 +153,9 @@
         “Hey, let’s do this.”
       </p>
 
-      <button>More Info</button>
+      <button class="btn">More Info</button>
     </section>
-    <section class="popular-destinations" id="destinations">
+    <section class="popular-destinations" id="destination">
       <div class="destinations-container">
         <div class="destination">
           <div class="content">
@@ -291,62 +293,70 @@
     </section>
 
     <!-- Testimonial Container -->
-    <section class="test-container">
-      <div class="testimonial mySwiper">
-        <div class="testi-content swiper-wrapper">
-          <div class="slide swiper-slide">
-            <img src="images/img1.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <img src="images/img2.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <img src="images/img3.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next nav-btn"></div>
-        <div class="swiper-button-prev nav-btn"></div>
-        <div class="swiper-pagination"></div>
+    <section id="testimonials" class="testimonial-container">
+      <div class="content">
+        <h1>Customers Reviws</h1>
+       
       </div>
+      <div class="test_container">
+      <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="images/img-1.jpeg" class="client-img" alt="">
+                    <span class="client-name">client one</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-no-fill.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="images/img-2.jpeg" class="client-img" alt="">
+                    <span class="client-name">client two</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-no-fill.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="images/img-3.jpeg" class="client-img" alt="">
+                    <span class="client-name">client three</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                    <div class="rating">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-fill.png" class="star" alt="">
+                        <img src="images/star-no-fill.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+  </div>
     </section>
 
      <!-- Contact Container -->
@@ -401,11 +411,7 @@
     slidesPerView: 1,
     grabCursor: true,
     loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-        },
+    
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
