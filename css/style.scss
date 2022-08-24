@@ -212,7 +212,7 @@ $secondary-color: #ff7c5b;
       vertical-align: middle;
      .text{
        position: absolute;
-       top: 30%;
+       top: 20%;
        width: 100%;
 
       span{
@@ -224,7 +224,7 @@ $secondary-color: #ff7c5b;
       }
 
       h3{
-          font-size: 6vw;
+          font-size: 4vw;
           color:$white;
       }
 
@@ -312,6 +312,10 @@ $secondary-color: #ff7c5b;
               font-size: 6vw !important;
               margin: 20px 10px;
           }
+          h3{
+              font-size: 6vw !important;
+              margin: 20px 10px;
+          }
 
           p{
             margin: 20px 10px;
@@ -368,6 +372,10 @@ $secondary-color: #ff7c5b;
         .text{
           // top: 15%;
           span{
+              font-size: 6vw !important;
+              margin: 20px 10px;
+          }
+          h3{
               font-size: 6vw !important;
               margin: 20px 10px;
           }
