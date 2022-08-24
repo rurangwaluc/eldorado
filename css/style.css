@@ -17,15 +17,12 @@ html {
 
 ::-webkit-scrollbar {
   width: 0.8rem;
-}
-
-::-webkit-scrollbar-track {
-  background: #1D93D1;
+  height: 1.8rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2D3192;
-  /* border-radius: 5rem; */
+  background: #1D93D1;
+  border-radius: 5rem;
 }
 
 body {
@@ -231,7 +228,7 @@ button:hover {
     margin-top: 70px;
   }
   .home .content .text {
-    top: 10%;
+    top: 15%;
   }
   .home .content .text span {
     font-size: 6vw;

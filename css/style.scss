@@ -35,15 +35,13 @@ html {
 
 ::-webkit-scrollbar{
   width: .8rem;;
+  height: 1.8rem;
 }
 
-::-webkit-scrollbar-track{
-  background: #1D93D1;
-}
 
 ::-webkit-scrollbar-thumb{
-  background: #2D3192;
-  /* border-radius: 5rem; */
+  background: #1D93D1;
+   border-radius: 5rem;
 }
 
 body {
@@ -301,7 +299,7 @@ $secondary-color: #ff7c5b;
 
       .content{
         .text{
-          top: 10%;
+          top: 15%;
           span{
               font-size: 6vw;
               margin: 20px 10px;
