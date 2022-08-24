@@ -203,7 +203,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   .btn {
-    margin-top: -10px;
+    margin-top: 10px;
     padding: 10px 30px;
   }
   #menu-btn {
@@ -234,11 +234,8 @@ button:hover {
   .home .video-container video {
     height: 80vh;
   }
-  .home .content .text {
-    top: 15%;
-  }
   .home .content .text span {
-    font-size: 4vw;
+    font-size: 6vw !important;
     margin: 20px 10px;
   }
   .home .content .text p {
@@ -251,7 +248,7 @@ button:hover {
 }
 @media (max-width: 390px) {
   .btn {
-    margin-top: -10px;
+    margin-top: 10px;
     padding: 5px 15px;
   }
   #menu-btn {
@@ -283,11 +280,8 @@ button:hover {
   .home .video-container video {
     height: 80vh;
   }
-  .home .content .text {
-    top: 15%;
-  }
   .home .content .text span {
-    font-size: 4vw;
+    font-size: 6vw !important;
     margin: 20px 10px;
   }
   .home .content .text p {
