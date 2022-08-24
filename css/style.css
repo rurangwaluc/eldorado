@@ -234,6 +234,9 @@ button:hover {
   .home .video-container video {
     height: 80vh;
   }
+  .home .content .text {
+    top: 25%;
+  }
   .home .content .text span {
     font-size: 6vw !important;
     margin: 20px 10px;
