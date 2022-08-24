@@ -103,8 +103,8 @@ $secondary-color: #ff7c5b;
 
 .btn{
   margin-top: 10px;
-  display: inline-block;
   padding:10px 30px;
+  display: inline-block;
   font-size: 17px;
   color:$blue;
   border:$border;
@@ -267,7 +267,10 @@ $secondary-color: #ff7c5b;
 
 @media (max-width:768px){
 
- 
+  .btn{
+    margin-top: -10px;
+    padding:10px 30px;
+  }
   
   #menu-btn{
       display: inline-block;
@@ -288,7 +291,7 @@ $secondary-color: #ff7c5b;
 
           a{
               margin:20px;
-              font-size: 20px;
+              font-size: 17px;
               display: block;
           }
       }
@@ -296,17 +299,83 @@ $secondary-color: #ff7c5b;
 
   .home{
       margin-top: 70px;
+      .video-container{
+        video{
+          height: 80vh;
+        }
+      }
 
       .content{
         .text{
           top: 15%;
           span{
-              font-size: 6vw;
+              font-size: 4vw;
               margin: 20px 10px;
           }
 
           p{
             margin: 20px 10px;
+            font-size: 15px;
+          }
+      }
+      }
+  }
+  .h1{
+    font-size: 1px;
+  }
+}
+@media (max-width:390px){
+
+  .btn{
+    margin-top: -10px;
+    padding:5px 15px;
+  }
+  
+  #menu-btn{
+      display: inline-block;
+      color: #333333;
+  }
+
+  .header{
+
+      .navbar{
+          position: absolute;
+          top:99%; left:0; right:0;
+          background: #ffffff;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+          &.active{
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+
+          a{
+              margin:20px;
+              font-size: 17px;
+              display: block;
+          }
+      }
+  }
+
+  .home{
+      margin-top: 70px;
+      width: 100%;
+      .video-container{
+        video{
+          height: 80vh;
+        }
+      }
+
+      .content{
+        .text{
+          top: 15%;
+          span{
+              font-size: 4vw;
+              margin: 20px 10px;
+          }
+
+          p{
+            margin: 20px 10px;
+            font-size: 13px;
           }
       }
       }
@@ -789,7 +858,56 @@ button.active{
       margin-left: 0;
   }
 }
+@media (max-width: 390px){
+  .testimonial-container{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container{
+      width: 50%;
+      margin: 0 auto;
+  }
+  .card{
+    // width: 235px;
+    margin: 0 auto;
+      flex-direction: column;
+  }
+  .card-thumb{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .card-body{
+      width: 100%;
+      min-height: auto;
+      margin-left: 0;
+  }
 }
+}
+@media (max-width: 280px){
+  .testimonial-container{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container{
+      width: 50%;
+      margin: 0 auto;
+  }
+  .card{
+    width: 235px !important;
+    margin: 0 auto;
+      flex-direction: column;
+  }
+  .card-thumb{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .card-body{
+      width: 100%;
+      min-height: auto;
+      margin-left: 0;
+  }
+}
+
 }
 
 
@@ -1189,6 +1307,10 @@ display: block;
 @media screen and(max-width:660px) {
   .specials {
     padding: 1rem;
+
+    h1{
+      font-size: 30px;
+    }
 
     .cards-container {
       // padding: 3rem;
